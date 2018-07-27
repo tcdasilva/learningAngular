@@ -1,0 +1,17 @@
+<p>
+Lista de Cursos
+</p>
+
+<div class="collection">
+    <a  class="collection-item"
+      *ngFor="let curso of cursos"
+      [routerLink]="['/curso', curso.id]">
+      {{curso.nome}}
+    </a>
+</div>
+
+<ul class="pagination">
+  <li class="waves-effect"><a (click)="onPrevioPage()"><i class="material-icons">chevron_left</i></a></li>
+  <span style="font-size:12px">Page {{ pagina }} </span>
+  <li class="waves-effect"><a (click)="onNextPage()"><i class="material-icons">chevron_right</i></a></li>
+</ul>

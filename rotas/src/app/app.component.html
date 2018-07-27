@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav *ngIf="mostrarMenu" >
+    <div class="nav-wrapper">
+      <a routerLink='' class="brand-logo right">NG-Rotas</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li routerLinkActive='active'><a routerLink='/login'>Login</a></li>
+        <li routerLinkActive='active'><a routerLink='/cursos' [queryParams]={pagina:1}>Cursos</a></li>
+        <!--li routerLinkActive='active'><a [routerLink]="['/curso', idCurso.value]">Id do Curso</a></li-->
+        <li routerLinkActive='active'><a routerLink='/alunos'>Alunos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container">
+  <!--p>Digite o Id do curso </p>
+  <input #idCurso-->
+
+  <router-outlet></router-outlet>
+</div>

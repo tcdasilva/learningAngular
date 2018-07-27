@@ -1,0 +1,23 @@
+<h5>
+  Login
+</h5>
+
+<div class="row">
+  <div class="input-field col s12">
+    <input  id="usuario" [(ngModel)]="usuario.nome"  class="validate"/>
+    <label class="active" for="usuario">Name</label>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="input-field col s12">
+    <input  id="senha" [(ngModel)]="usuario.senha" type="password" class="validate"/>
+    <label class="active" for="senha">password</label>
+  </div>
+</div>
+<button class="btn waves-effect waves-light"
+         name="action" (click)="logar()">Submit
+  <i class="material-icons right">send</i>
+</button>
